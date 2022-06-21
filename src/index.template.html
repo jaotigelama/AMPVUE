@@ -1,0 +1,35 @@
+<!doctype html>
+<html amp>
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <title>{{ title }}</title>
+    <link rel="canonical" href={{{url}}}>
+
+    <!--For youtube vidro player-->
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <!--For amp-list-->
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <!--For amp-script-->
+    <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+    <!--For amp-mustache-->
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    
+    <!--For List function-->
+    <meta name="amp-script-src" content="sha384-xRaB1FXUqqXfx-tIKfvgCWqf8FVDbC49i6o_sScW5D990ze6Hu5iBDuicFNyOWvu">
+
+    <!--For test function-->
+    <meta name="amp-script-src" content="sha384-kZzIekS6tT3iWpZo4O19sjfZs6qMGVNgZNLZT4EitNcICI1Go-5nSeu6Z-Z8QspP">
+  </head>
+  <body>
+
+    <div id="app">{{{ content }}}</div>
+
+    <!--<amp-script>-->
+      {{{ scripts }}}
+    <!--</amp-script>-->
+
+  </body>
+</html>
